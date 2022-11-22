@@ -1,16 +1,5 @@
 import styles from "../styles/styles";
-import {
-	Billing,
-	Business,
-	CardDeals,
-	Clients,
-	CTA,
-	Footer,
-	Hero,
-	Navbar,
-	Starts,
-	Testimonials,
-} from "./components";
+import { Footer, Hero, Navbar, Starts } from "./components";
 
 export default function Home() {
 	return (
@@ -26,16 +15,13 @@ export default function Home() {
 					<Hero />
 				</div>
 			</div>
-
-			<div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+			<div className={`bg-primary ${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Starts />
-					<Business />
-					<Billing />
-					<CardDeals />
-					<Testimonials />
-					<Clients />
-					<CTA />
+				</div>
+			</div>
+			<div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+				<div className={`${styles.boxWidth}`}>
 					<Footer />
 				</div>
 			</div>
