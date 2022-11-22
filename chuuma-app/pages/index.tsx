@@ -3,7 +3,7 @@ import { Footer, Hero, Navbar, Starts } from "./components";
 
 export default function Home() {
 	return (
-		<div className="bg-primary w-full overflow-hidden">
+		<div className="bg-primary w-full overflow-hidden px-10">
 			<div className={`${styles.paddingX} ${styles.flexCenter}`}>
 				<div className={`${styles.boxWidth}`}>
 					<Navbar />

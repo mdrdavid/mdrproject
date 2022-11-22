@@ -6,6 +6,7 @@ import instagram from "../public/instagram.svg";
 import linkedin from "../public/linkedin.svg";
 import twitter from "../public/twitter.svg";
 import Star from "../public/Star.svg";
+import whatsapp from "../public/whatsapp.svg"
 
 export const navLinks = [
 	{
@@ -80,7 +81,7 @@ export const feedback = [
 export const stats = [
 	{
 		id: "stats-1",
-		title: "User Clientss",
+		title: "User Clients",
 		value: "3800+",
 	},
 	{
@@ -104,16 +105,8 @@ export const footerLinks = [
 				link: "https://www.hoobank.com/content/",
 			},
 			{
-				name: "How it Works",
+				name: "How we Work",
 				link: "https://www.hoobank.com/how-it-works/",
-			},
-			{
-				name: "Create",
-				link: "https://www.hoobank.com/create/",
-			},
-			{
-				name: "Explore",
-				link: "https://www.hoobank.com/explore/",
 			},
 			{
 				name: "Terms & Services",
@@ -125,16 +118,8 @@ export const footerLinks = [
 		title: "Community",
 		links: [
 			{
-				name: "Help Center",
+				name: "Training",
 				link: "https://www.hoobank.com/help-center/",
-			},
-			{
-				name: "Partners",
-				link: "https://www.hoobank.com/partners/",
-			},
-			{
-				name: "Suggestions",
-				link: "https://www.hoobank.com/suggestions/",
 			},
 			{
 				name: "Blog",
@@ -171,6 +156,11 @@ export const socialMedia = [
 		id: "social-media-2",
 		icon: facebook,
 		link: "https://www.facebook.com/",
+	},
+	{
+		id: "social-media-4",
+		icon: whatsapp,
+		link: "https://www.whatsapp.com/",
 	},
 	{
 		id: "social-media-3",
