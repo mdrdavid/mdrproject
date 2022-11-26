@@ -6,7 +6,8 @@ import instagram from "../public/instagram.svg";
 import linkedin from "../public/linkedin.svg";
 import twitter from "../public/twitter.svg";
 import Star from "../public/Star.svg";
-import whatsapp from "../public/whatsapp.svg"
+import whatsapp from "../public/whatsapp.svg";
+import phonecall from "../public/phonecall.svg";
 
 export const navLinks = [
 	{
@@ -92,7 +93,7 @@ export const stats = [
 	{
 		id: "stats-3",
 		title: "Finished Sites",
-		value: "$230M+",
+		value: "230+",
 	},
 ];
 
@@ -170,6 +171,11 @@ export const socialMedia = [
 	{
 		id: "social-media-4",
 		icon: linkedin,
+		link: "https://www.linkedin.com/",
+	},
+	{
+		id: "social-media-4",
+		icon: phonecall,
 		link: "https://www.linkedin.com/",
 	},
 ];

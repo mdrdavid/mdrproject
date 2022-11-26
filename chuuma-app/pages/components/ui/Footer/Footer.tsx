@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "../../../../styles/styles";
 import mark from "../../../../public/mark.svg";
-import { footerLinks, socialMedia } from "../../../../constants";
+import { footerLinks } from "../../../../constants";
+import SocialContacts from "../SocialContacts/SocialContacts";
 
 const Footer = () => (
 	<section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
@@ -48,20 +49,7 @@ const Footer = () => (
 			<p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
 				Copyright Ⓒ 2022 chuuma. All Rights Reserved.
 			</p>
-
-			<div className="flex flex-row md:mt-0 mt-6">
-				{socialMedia.map((social, index) => (
-					<Image
-						key={social.id}
-						src={social.icon}
-						alt={social.id}
-						className={`w-[21px] h-[21px] object-contain cursor-pointer ${
-							index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-						}`}
-						onClick={() => window.open(social.link)}
-					/>
-				))}
-			</div>
+			<SocialContacts />
 		</div>
 	</section>
 );
