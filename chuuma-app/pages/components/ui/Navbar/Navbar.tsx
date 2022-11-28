@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import logo from "../../../../public/logo.jpg";
+import logos from "../../../../public/logos.jpg";
 import close from "../../../../public/close.svg";
 import menu2 from "../../../../public/menu2.svg";
 import mark from "../../../../public/mark.svg";
@@ -15,7 +15,7 @@ const Navbar = (props: Props) => {
 	const [toggle, setToggle] = useState(false);
 	return (
 		<nav className="w-full flex py-6 justify-between items-center navbar">
-			<Image src={logo} alt="logo" className="w-[80px] h-[52px]" />
+			<Image src={logos} alt="logo" className="w-[80px] h-[52px]" />
 
 			<ul className="list-none sm:flex hidden justify-end items-center flex-1">
 				{navLinks.map((nav, index) => (
