@@ -17,7 +17,7 @@ const Hero = () => {
 				<div
 					className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
 				>
-					<div className=" hidden sm:flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
+					{/* <div className=" hidden sm:flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
 						<Image
 							src={discount}
 							alt="discount"
@@ -27,7 +27,7 @@ const Hero = () => {
 							<span className="text-white">20%</span> Discount For{" "}
 							<span className="text-white">1 Month</span> Account
 						</p>
-					</div>
+					</div> */}
 
 					<div className="flex flex-row justify-between items-center w-full">
 						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]">
@@ -52,8 +52,7 @@ const Hero = () => {
 				</div>
 
 				<div
-					className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
-				>
+					className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`} >
 					<Image
 						src={robot}
 						alt="billing"
