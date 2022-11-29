@@ -1,6 +1,21 @@
 import people01 from "../public/people01.png";
 import people02 from "../public/people02.png";
 import people03 from "../public/people03.png";
+import balcony1 from "../public/balcony1.jpg"
+import balcony2 from "../public/balcony2.jpg"
+import balcony3 from "../public/balcony3.jpg"
+import metalstair1 from "../public/metalstair1.jpg"
+import metalstair2 from "../public/metalstair2.jpg"
+import metalstair3 from "../public/metalstair3.jpg"
+import window1 from "../public/window1.jpeg"
+import window2 from "../public/window2.jpeg"
+import window3 from "../public/window3.jpeg"
+import door1 from "../public/door1.jpeg"
+import door2 from "../public/door2.jpg"
+import door3 from "../public/door3.jpg"
+import gates4 from "../public/gates4.jpg"
+import gates5 from "../public/gates5.jpg"
+import gates6 from "../public/gates6.jpg"
 import facebook from "../public/facebook.svg";
 import instagram from "../public/instagram.svg";
 import linkedin from "../public/linkedin.svg";
@@ -36,20 +51,6 @@ export const features = [
 		content:
 			"The best credit cards offer some tantalizing combinations of promotions and prizes",
 	},
-	// {
-	//   id: "feature-2",
-	//   icon: shield,
-	//   title: "100% Secured",
-	//   content:
-	//     "We take proactive steps make sure your information and transactions are secure.",
-	// },
-	// {
-	//   id: "feature-3",
-	//   icon: send,
-	//   title: "Balance Transfer",
-	//   content:
-	//     "A balance transfer credit card can save you a lot of money in interest charges.",
-	// },
 ];
 
 export const feedback = [
@@ -81,20 +82,97 @@ export const feedback = [
 
 export const stats = [
 	{
+		img: window1,
 		id: "stats-1",
-		title: "User Clients",
-		value: "3800+",
+		title: "Steel Metal Windows",
+		contact: "Call Us : 0705621018",
 	},
 	{
+		img: window2,
+		id: "stats-1",
+		title: "Steel Metal Windows",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: window3,
+		id: "stats-1",
+		title: "BSteel Metal Windows",
+		contact: "Call Us : 0705621018",
+	},
+
+	{
+		img: balcony1,
+		id: "stats-1",
+		title: "Balcony Metal Rails",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: balcony2,
 		id: "stats-2",
-		title: "Trusted by Company",
-		value: "230+",
+		title: "Balcony Metal Rails",
+		contact: "Call Us : 0705621018",
 	},
 	{
 		id: "stats-3",
-		title: "Finished Sites",
-		value: "230+",
+		img: balcony3,
+		title: "Balcony Metal Rails",
+		contact: "Call Us : 0705621018",
 	},
+	{
+		id: "stats-3",
+		img: door1,
+		title: "Metal Doors",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		id: "stats-3",
+		img: door2,
+		title: "Metal Doors",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		id: "stats-3",
+		img: door3,
+		title: "Metal Doors",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: metalstair1,
+		id: "stats-3",
+		title: "Metal Stair Railings",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: metalstair2,
+		id: "stats-3",
+		title: "Metal Stair Railings",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: metalstair3,
+		id: "stats-3",
+		title: "Metal Stair Railings",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img:gates4,
+		id: "stats-3",
+		title: "Metal Gates",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: gates5,
+		id: "stats-3",
+		title: "Metal Gates",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: gates6,
+		id: "stats-3",
+		title: "Metal Gates",
+		contact: "Call Us : 0705621018",
+	},
+	
 ];
 
 export const footerLinks = [

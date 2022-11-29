@@ -6,7 +6,8 @@ type Props = {};
 
 function SocialContacts({}: Props) {
 	return (
-		<div className="flex flex-row md:mt-0 mt-6">
+		<div>
+		<div className="flex flex-row justify-center md:mt-0 mt-6">
 			{socialMedia.map((social, index) => (
 				<Image
 					key={social.id}
@@ -18,6 +19,7 @@ function SocialContacts({}: Props) {
 					onClick={() => window.open(social.link)}
 				/>
 			))}
+		</div>
 		</div>
 	);
 }
