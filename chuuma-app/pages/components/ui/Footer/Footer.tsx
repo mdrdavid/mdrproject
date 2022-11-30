@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../../../../styles/styles";
 import mark from "../../../../public/mark.svg";
+import logos from "../../../../public/logos.jpg";
 import { footerLinks } from "../../../../constants";
 import SocialContacts from "../SocialContacts/SocialContacts";
 
@@ -9,7 +10,7 @@ const Footer = () => (
 		<div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
 			<div className="flex-[1] flex flex-col justify-start mr-10">
 				<Image
-					src={mark}
+					src={logos}
 					alt="logo"
 					className="w-[266px] h-[72.14px] object-contain"
 				/>

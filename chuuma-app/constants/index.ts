@@ -1,21 +1,24 @@
 import people01 from "../public/people01.png";
 import people02 from "../public/people02.png";
 import people03 from "../public/people03.png";
-import balcony1 from "../public/balcony1.jpg"
-import balcony2 from "../public/balcony2.jpg"
-import balcony3 from "../public/balcony3.jpg"
-import metalstair1 from "../public/metalstair1.jpg"
-import metalstair2 from "../public/metalstair2.jpg"
-import metalstair3 from "../public/metalstair3.jpg"
-import window1 from "../public/window1.jpeg"
-import window2 from "../public/window2.jpeg"
-import window3 from "../public/window3.jpeg"
-import door1 from "../public/door1.jpeg"
-import door2 from "../public/door2.jpg"
-import door3 from "../public/door3.jpg"
-import gates4 from "../public/gates4.jpg"
-import gates5 from "../public/gates5.jpg"
-import gates6 from "../public/gates6.jpg"
+import balcony1 from "../public/balcony1.jpg";
+import balcony2 from "../public/balcony2.jpg";
+import balcony3 from "../public/balcony3.jpg";
+import metalstair1 from "../public/metalstair1.jpg";
+import metalstair2 from "../public/metalstair2.jpg";
+import metalstair3 from "../public/metalstair3.jpg";
+import window1 from "../public/window1.jpeg";
+import window2 from "../public/window2.jpeg";
+import window3 from "../public/window3.jpeg";
+import door1 from "../public/door1.jpeg";
+import door2 from "../public/door2.jpg";
+import door3 from "../public/door3.jpg";
+import gates4 from "../public/gates4.jpg";
+import gates5 from "../public/gates5.jpg";
+import gates6 from "../public/gates6.jpg";
+import roolg2 from "../public/roolg2.jpg";
+import roolg1 from "../public/roolg1.jpg";
+import rool3 from "../public/rool3.jpeg";
 import facebook from "../public/facebook.svg";
 import instagram from "../public/instagram.svg";
 import linkedin from "../public/linkedin.svg";
@@ -155,7 +158,7 @@ export const stats = [
 		contact: "Call Us : 0705621018",
 	},
 	{
-		img:gates4,
+		img: gates4,
 		id: "stats-3",
 		title: "Metal Gates",
 		contact: "Call Us : 0705621018",
@@ -172,7 +175,24 @@ export const stats = [
 		title: "Metal Gates",
 		contact: "Call Us : 0705621018",
 	},
-	
+	{
+		img: roolg2,
+		id: "stats-3",
+		title: "Residential House Roller Shutters",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: roolg1,
+		id: "stats-3",
+		title: "Garage Roller Shutters",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: rool3,
+		id: "stats-3",
+		title: "Commercial Building Roller Shutters",
+		contact: "Call Us : 0705621018",
+	},
 ];
 
 export const footerLinks = [

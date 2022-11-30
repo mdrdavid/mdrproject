@@ -12,7 +12,7 @@ const Stats = () => (
 				<Image
 					src={stat.img}
 					alt="discount"
-					className="w-[400px] h-[400px] rounded-full"
+					className="w-[400px] h-[400px] sm:rounded-full"
 				/>
 				<h4 className="font-poppins font-semibold xs:text-[40.89px] text-[30.89px] xs:leading-[53.16px] leading-[43.16px] text-purple">
 					{stat.title}
