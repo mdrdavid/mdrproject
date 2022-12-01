@@ -19,6 +19,8 @@ import gates6 from "../public/gates6.jpg";
 import roolg2 from "../public/roolg2.jpg";
 import roolg1 from "../public/roolg1.jpg";
 import rool3 from "../public/rool3.jpeg";
+import bench1 from "../public/bench1.jpg";
+import bench2 from "../public/bench2.jpg";
 import facebook from "../public/facebook.svg";
 import instagram from "../public/instagram.svg";
 import linkedin from "../public/linkedin.svg";
@@ -99,7 +101,7 @@ export const stats = [
 	{
 		img: window3,
 		id: "stats-1",
-		title: "BSteel Metal Windows",
+		title: "Steel Metal Windows",
 		contact: "Call Us : 0705621018",
 	},
 
@@ -176,21 +178,27 @@ export const stats = [
 		contact: "Call Us : 0705621018",
 	},
 	{
-		img: roolg2,
-		id: "stats-3",
-		title: "Residential House Roller Shutters",
-		contact: "Call Us : 0705621018",
-	},
-	{
 		img: roolg1,
 		id: "stats-3",
-		title: "Garage Roller Shutters",
+		title: "Commercial Roller",
 		contact: "Call Us : 0705621018",
 	},
 	{
-		img: rool3,
+		img: roolg2,
 		id: "stats-3",
-		title: "Commercial Building Roller Shutters",
+		title: "House Roller Shutters",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: bench1,
+		id: "stats-3",
+		title: "Outdoor Benches",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: bench2,
+		id: "stats-3",
+		title: "Outdoor Benches",
 		contact: "Call Us : 0705621018",
 	},
 ];
