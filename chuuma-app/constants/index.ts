@@ -7,7 +7,7 @@ import balcony3 from "../public/balcony3.jpg";
 import metalstair1 from "../public/metalstair1.jpg";
 import metalstair2 from "../public/metalstair2.jpg";
 import metalstair3 from "../public/metalstair3.jpg";
-import window1 from "../public/window1.jpeg";
+import steelwindow from "../public/steelwindow.jpg";
 import window2 from "../public/window2.jpeg";
 import window3 from "../public/window3.jpeg";
 import door1 from "../public/door1.jpeg";
@@ -87,7 +87,7 @@ export const feedback = [
 
 export const stats = [
 	{
-		img: window1,
+		img: steelwindow,
 		id: "stats-1",
 		title: "Steel Metal Windows",
 		contact: "Call Us : 0705621018",
