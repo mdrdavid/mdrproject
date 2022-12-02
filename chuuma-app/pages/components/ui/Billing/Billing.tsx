@@ -1,34 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, createContext, useContext } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 interface Props {}
 
+const UserContext = createContext()
+
+
 const Billing = (props: Props) => {
+	const [user, setUser] = useState("David ");
+
 	const [startDate, setStartDate] = useState(null);
 	const [endDate, setEndDate] = useState(null);
 	return (
 		<>
-			{/* <DatePicker selected={startDate} onChange={(date:Date) => setStartDate(date)}  showTimeSelect
-    dateFormat="Pp"/> */}
-
 			<div date-rangepicker className="flex items-center">
 				<div className="relative">
-					<div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-						{/* <svg
-							aria-hidden="true"
-							className="w-5 h-5 text-gray-500 dark:text-gray-400"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-								clip-rule="evenodd"
-							></path>
-						</svg> */}
-					</div>
+				<h1>{`Hello ${user}!`}</h1>
+
+					{/* <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+					</div> */}
 					<DatePicker
 						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						selected={startDate}
@@ -41,21 +32,7 @@ const Billing = (props: Props) => {
 				</div>
 				<span className="mx-4 text-gray-500">to</span>
 				<div className="relative">
-					<div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-						<svg
-							aria-hidden="true"
-							className="w-5 h-5 text-gray-500 dark:text-gray-400"
-							fill="currentColor"
-							viewBox="0 0 20 20"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								fill-rule="evenodd"
-								d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
-								clip-rule="evenodd"
-							></path>
-						</svg>
-					</div>
+					<div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"></div>
 					<DatePicker
 						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						selected={endDate}
@@ -67,16 +44,20 @@ const Billing = (props: Props) => {
 					/>
 					{/* <input name="end" type="text" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date end"/> */}
 				</div>
+				{/* <UserComponent/> */}
 			</div>
 		</>
-		//     <DatePicker
-		//   selected={date}
-		//   onSelect={handleDateSelect} //when day is clicked
-		//   onChange={handleDateChange} //only when value has changed
-		// />
 	);
-	// return (
-	//   <div>Billing</div>
-	// )
 };
 export default Billing;
+
+const UserComponent = () => {
+	const user = useContext(UserContext);
+	<UserContext.Provider value={user}>
+		<h2>{`Hello ${user} Good Afternoon!`}</h2>
+	</UserContext.Provider>;
+};
+
+const User1 =()=>{
+
+}

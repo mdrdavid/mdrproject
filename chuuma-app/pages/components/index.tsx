@@ -11,3 +11,4 @@ export { default as Starts } from "./ui/Starts/Starts";
 export { default as ContactUs } from "./ui/Contact/ContactUs";
 export { default as Testimonials } from "./ui/Testimonials/Testmonials";
 export { default as Footer } from "./ui/Footer/Footer";
+export { default as Services } from "./ui/Services/Services";

@@ -1,5 +1,5 @@
 import styles from "../styles/styles";
-import { Footer, Hero, Navbar, Starts } from "./components";
+import { Footer, Hero, Navbar, Services, Starts} from "./components";
 
 export default function Home() {
 	return (
@@ -19,8 +19,9 @@ export default function Home() {
 					<Starts />
 				</div>
 			</div>
-			<div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+			<div className={`bg-primary  ${styles.paddingX} ${styles.flexStart}`}>
 				<div className={`${styles.boxWidth}`}>
+					<Services/>
 					<Footer />
 				</div>
 			</div>

@@ -43,6 +43,7 @@ const Hero = () => {
 					backgroundImage: `url(${windows.src})`,
 					width: "100%",
 					height: "100%",
+					borderRadius:"20px"
 				}}
 			>
 				<div
@@ -117,7 +118,7 @@ const Hero = () => {
 			</section>
 			<div className="">
 				<p
-					className={`${styles.paragraph} max-w-[470px] mt-5 sm:text-white text-[25px]`}
+					className={`${styles.paragraph} max-w-[470px] mt-5 sm:text-white text-[25px] sm:hidden`}
 				>
 					We make Aluminum doors and windows ,steal doors and windows, roller
 					shutters,balconies, beds, school desks.
