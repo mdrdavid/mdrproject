@@ -3,6 +3,7 @@ import styles from "../../../../styles/styles";
 import robot from "../../../../public/robot.jpg";
 import windows from "../../../../public/windows.jpeg";
 import hero2 from "../../../../public/hero2.jpeg";
+import bg1 from "../../../../public/bg1.jpg";
 import SocialContacts from "../SocialContacts/SocialContacts";
 
 interface HeroProps {}
@@ -40,14 +41,15 @@ const Hero = () => {
 				id="home"
 				className={`block  ${styles.paddingY}`}
 				style={{
-					backgroundImage: `url(${windows.src})`,
+					backgroundImage: `url(${bg1.src})`,
 					width: "100%",
 					height: "100%",
-					borderRadius:"20px"
+					borderRadius:"20px",
+					backgroundRepeat: "repeat-x"
 				}}
 			>
 				<div
-					className={`hidden sm:flex ${styles.flexStart} flex-col bg-rose-300 rounded-2xl m-auto text-center py-5 px-6 xl:px-0 sm:px-16 sm:py-16 sm:w-[500px] sm:h-[430px]`}
+					className={`hidden sm:flex ${styles.flexStart} flex-col bg-cyan-800 rounded-2xl m-auto text-center py-5 px-6 xl:px-0 sm:px-16 sm:py-16 sm:w-[600px] sm:h-[500px]`}
 				>
 					<div className="flex flex-row justify-between items-center w-full">
 						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[27px] ss:leading-[100.8px] leading-[10px]">
@@ -61,45 +63,50 @@ const Hero = () => {
 							Wabigalo Mityana
 						</h1>
 						<p
-							className={`${styles.paragraph} max-w-[470px] mt-1 text-white text-[30px]`}
+							className={`${styles.paragraph} max-w-[470px] mt-1 text-red-500 text-[30px]`}
 						>
 							We make;
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500 text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900 font-semibold text-[20px] text-start ml-5`}
 						>
 							Aluminum doors and windows{" "}
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500 text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900 text-[20px] font-semibold text-start ml-5`}
 						>
 							Steal doors and windows
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500 text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900 text-[20px] font-semibold text-start ml-5`}
 						>
 							Roller Shutters
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500  text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
 						>
 							Balconies
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500  text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
 						>
 							Beds
 						</p>
 						<p
-							className={`${styles.paragraph} mt-1 text-gray-500  text-[20px] text-start ml-5`}
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
 						>
 							School Desks
 						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
+						>
+							Kids play equipments
+						</p>
 						<div className="">
-							<h1 className="text-[26px] pt-4 pb-3 px-4 text-white">
+							<h1 className="text-[26px] pt-4 pb-3 px-4 text-red-500">
 								Contact Us:
 							</h1>
-							<h2 className="text-[26px] text-gray-500 text-start  pb-3 ml-5">
+							<h2 className="text-[26px] text-gray-90font-semibold 0 text-start  pb-3 ml-5">
 								0705621018 / 0781602071
 							</h2>
 							<SocialContacts />
@@ -125,8 +132,8 @@ const Hero = () => {
 				</p>
 				<p className=" hidden sm:block text-[25px] pt-4 pb-3 text-center">
 					Our experienced and highly skilled Technical team are always there to
-					provide you with quality products that fit your dreams needs.
-					<p>Contact us on 0705621018 / 0781602071</p>
+					provide you with quality products that fit your home and Commercial building metal requirements.
+					<p className="font-semibold py-5">Contact us on 0705621018 / 0781602071</p>
 				</p>
 				<SocialContacts />
 			</div>

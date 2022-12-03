@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import logos from "../../../../public/logos.jpg";
 import close from "../../../../public/close.svg";
@@ -15,20 +16,20 @@ const Navbar = (props: Props) => {
 		<nav className="w-full flex py-6 justify-between items-center navbar">
 			<Image src={logos} alt="logo" className="w-[80px] h-[52px] hidden md:flex" />
 			{/* <div className="flex flex-row justify-between items-center w-full"> */}
-			<h1 className="flex-1 font-poppins font-semibold ss:text-[50px] text-[30px] sm:text-[40px] ss:leading-[100.8px] leading-[50px]">
-				<span className="text-gradient">Chuuma Fubricators</span>{" "}
+			<h1 className="flex-1 font-poppins font-bold ss:text-[50px] text-[30px] sm:text-[40px] ss:leading-[100.8px] leading-[50px]">
+				<span className="text-gradient">Chuuma Fubricators Mityana</span>{" "}
 			</h1>
 			{/* </div> */}
 			<ul className="list-none sm:flex hidden justify-end items-center flex-1">
 				{navLinks.map((nav, index) => (
 					<li
 						key={nav.id}
-						className={`font-poppins font-normal cursor-pointer text-[16px] ${
-							active === nav.title ? "text-white" : "text-dimWhite"
+						className={`font-poppins font-semibold cursor-pointer text-[18px] ${
+							active === nav.title ? "text-red-500" : "text-dimWhite"
 						} ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
 						onClick={() => setActive(nav.title)}
 					>
-						<a href={`#${nav.id}`}>{nav.title}</a>
+						<Link href={`#${nav.id}`}>{nav.title}</Link>
 					</li>
 				))}
 			</ul>
@@ -51,11 +52,11 @@ const Navbar = (props: Props) => {
 							<li
 								key={nav.id}
 								className={`font-poppins font-medium cursor-pointer text-[30px] ${
-									active === nav.title ? "text-white" : "text-dimWhite"
+									active === nav.title ? "text-gray-900" : "text-dimWhite"
 								} ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
 								onClick={() => setActive(nav.title)}
 							>
-								<a href={`#${nav.id}`}>{nav.title}</a>
+								<Link href={`#${nav.id}`}>{nav.title}</Link>
 							</li>
 						))}
 					</ul>

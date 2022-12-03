@@ -12,7 +12,11 @@ import window2 from "../public/window2.jpeg";
 import window3 from "../public/window3.jpeg";
 import door1 from "../public/door1.jpeg";
 import door2 from "../public/door2.jpg";
-import door3 from "../public/door3.jpg";
+import bed1 from "../public/bed1.jpg";
+import schoolbed1 from "../public/schoolbed1.jpg";
+import schooldesk1 from "../public/schooldesk1.jpg";
+import door4 from "../public/door4.jpg";
+import door5 from "../public/door5.jpg";
 import gates4 from "../public/gates4.jpg";
 import gates5 from "../public/gates5.jpg";
 import gates6 from "../public/gates6.jpg";
@@ -28,6 +32,9 @@ import twitter from "../public/twitter.svg";
 import Star from "../public/Star.svg";
 import whatsapp from "../public/whatsapp.svg";
 import phonecall from "../public/phonecall.svg";
+import kidsslide from "../public/kidsslide.jpg";
+import kidsslide2 from "../public/kidsslide2.jpg";
+
 
 export const navLinks = [
 	{
@@ -89,19 +96,19 @@ export const stats = [
 	{
 		img: steelwindow,
 		id: "stats-1",
-		title: "Steel Metal Windows",
+		title: "Metal Windows",
 		contact: "Call Us : 0705621018",
 	},
 	{
 		img: window2,
 		id: "stats-1",
-		title: "Steel Metal Windows",
+		title: "Metal Windows",
 		contact: "Call Us : 0705621018",
 	},
 	{
 		img: window3,
 		id: "stats-1",
-		title: "Steel Metal Windows",
+		title: "Metal Windows",
 		contact: "Call Us : 0705621018",
 	},
 
@@ -137,7 +144,13 @@ export const stats = [
 	},
 	{
 		id: "stats-3",
-		img: door3,
+		img: door4,
+		title: "Metal Doors",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		id: "stats-3",
+		img: door5,
 		title: "Metal Doors",
 		contact: "Call Us : 0705621018",
 	},
@@ -201,6 +214,36 @@ export const stats = [
 		title: "Outdoor Benches",
 		contact: "Call Us : 0705621018",
 	},
+	{
+		img: bed1,
+		id: "stats-3",
+		title: "Metal Beds",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: schoolbed1,
+		id: "stats-3",
+		title: "Metal Beds",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: schooldesk1,
+		id: "stats-3",
+		title: "Metal Desks",
+		contact: "Call Us : 0705621018",
+	},
+	{
+		img: kidsslide2,
+		id: "stats-3",
+		title: "Kids Slide",
+		contact: "Call Us : 0705621018",
+	},
+	// {
+	// 	img: kidsslide,
+	// 	id: "stats-3",
+	// 	title: "Kids Rotating Platform",
+	// 	contact: "Call Us : 0705621018",
+	// },
 ];
 
 export const footerLinks = [
