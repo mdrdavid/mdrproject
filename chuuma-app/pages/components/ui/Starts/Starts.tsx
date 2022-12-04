@@ -7,7 +7,7 @@ const Stats = () => (
 		{stats.map((stat) => (
 			<div
 				key={stat.id}
-				className={`flex justify-start items-center flex-col flex-wrap m-3 border  `}
+				className={`flex justify-start items-center flex-col flex-wrap m-3 border rounded `}
 			>
 				<Image
 					src={stat.img}

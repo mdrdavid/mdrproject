@@ -54,7 +54,7 @@ const Hero = () => {
 					<div className="flex flex-row justify-between items-center w-full">
 						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[27px] ss:leading-[100.8px] leading-[10px]">
 							<span className="text-gradient sm:hidden">
-								Chuuma Fubricators
+								Chuuma Fabricators
 							</span>{" "}
 						</h1>
 					</div>

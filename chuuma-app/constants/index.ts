@@ -35,7 +35,6 @@ import phonecall from "../public/phonecall.svg";
 import kidsslide from "../public/kidsslide.jpg";
 import kidsslide2 from "../public/kidsslide2.jpg";
 
-
 export const navLinks = [
 	{
 		id: "home",
@@ -46,7 +45,7 @@ export const navLinks = [
 		title: "Services",
 	},
 	{
-		id: "product",
+		id: "products",
 		title: "Products",
 	},
 	{
