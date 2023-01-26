@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "../../../../styles/styles";
 import robot from "../../../../public/robot.jpg";
@@ -9,35 +10,40 @@ import SocialContacts from "../SocialContacts/SocialContacts";
 interface HeroProps {}
 
 const Hero = () => {
+	// const [currentIndex, setCurrentIndex] = useState(0);
+  //   const images = [
+  //       { src: windows, alt: 'Image 1', width: 1000, height: 1000 },
+  //       { src: hero2, alt: 'Image 2', width: 1000, height: 1000  },
+  //       { src: bg1, alt: 'Image 3', width: 1000, height: 1000  },
+  //       { src: robot, alt: 'Image 4', width: 1000, height: 1000  },
+  //       { src: windows, alt: 'Image 5',width: 1000, height: 1000  }
+  //   ];
+
+  //   useEffect(() => {
+  //       const intervalId = setInterval(() => {
+  //           setCurrentIndex((currentIndex + 1) % images.length);
+  //       }, 3000);
+  //       return () => clearInterval(intervalId);
+  //   }, [currentIndex, images.length]);
 	return (
 		<>
-			{/* <div
-				className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
-			>
-				<div className="flex flex-row justify-between w-full">
-					<h1 className="flex-1 font-poppins font-semibold ss:text-[20px] text-[20px] ss:leading-[100.8px] leading-[20px]">
-						<span className="text-gradient"> Wabigalo Mityana</span>{" "}
-					</h1>
-				</div>
-				<div
-					className=""
-					style={{
-						backgroundImage: `url(${windows.src})`,
-						width: "100%",
-						height: "100%",
-					}}
-				>
-					<p className={` ${styles.paragraph} max-w-[100%] mt-5`}>
-						We make Aluminum doors and windows ,steal doors and windows, roller
-						shutters,balconies, beds, school desks etc.
-					</p>
-					<h1 className="text-[18px] pt-4 pb-3">
-						Contact us on 0705621018 / 0781602071
-					</h1>
-				</div>
-			</div> */}
 
-			<section
+{/* <div className="relative bg-gray-200 p-4 w-full">
+            <div className="absolute top-0 left-0 right-0">
+                <p className="text-center text-white bg-black p-2">This is the component sitting on top of the Carousel</p>
+            </div>
+            <Image
+                src={images[currentIndex].src}
+                alt={images[currentIndex].alt}
+                width={images[currentIndex].width}
+                height={images[currentIndex].height}
+                className="mx-auto"
+            />
+        </div> */}
+
+
+
+			<div
 				id="home"
 				className={`block  ${styles.paddingY}`}
 				style={{
@@ -53,12 +59,13 @@ const Hero = () => {
 				>
 					<div className="flex flex-row justify-between items-center w-full">
 						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[27px] ss:leading-[100.8px] leading-[10px]">
-							<span className="text-gradient sm:hidden">
+							<span className="text-gradient text-[#9A2582] sm:hidden">
 								Chuuma Fabricators
 							</span>{" "}
 						</h1>
 					</div>
 					<div>
+						<div>
 						<h1 className=" md:hidden font-poppins font-semibold ss:text-[68px] text-[30px] ss:leading-[100.8px] leading-[30px] w-full">
 							Wabigalo Mityana
 						</h1>
@@ -102,6 +109,7 @@ const Hero = () => {
 						>
 							Kids play equipments
 						</p>
+						</div>
 						<div className="">
 							<h1 className="text-[26px] pt-4 pb-3 px-4 text-red-500">
 								Contact Us:
@@ -109,7 +117,7 @@ const Hero = () => {
 							<h2 className="text-[26px] text-gray-90font-semibold 0 text-start  pb-3 ml-5">
 								0705621018 / 0781602071
 							</h2>
-							<SocialContacts />
+							{/* <SocialContacts /> */}
 						</div>
 					</div>
 				</div>
@@ -122,7 +130,7 @@ const Hero = () => {
 						className="w-[90%] h-[90%] relative z-[5] rounded-2xl"
 					/>
 				</div>
-			</section>
+			</div>
 			<div className="">
 				<p
 					className={`${styles.paragraph} max-w-[470px] mt-5 sm:text-white text-[25px] sm:hidden`}

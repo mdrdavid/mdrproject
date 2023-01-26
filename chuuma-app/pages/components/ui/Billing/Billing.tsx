@@ -4,8 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 
 interface Props {}
 
-const UserContext = createContext()
-
+const UserContext = createContext();
 
 const Billing = (props: Props) => {
 	const [user, setUser] = useState("David ");
@@ -16,7 +15,7 @@ const Billing = (props: Props) => {
 		<>
 			<div date-rangepicker className="flex items-center">
 				<div className="relative">
-				<h1>{`Hello ${user}!`}</h1>
+					<h1>{`Hello ${user}!`}</h1>
 
 					{/* <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
 					</div> */}
@@ -24,6 +23,7 @@ const Billing = (props: Props) => {
 						className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
 						selected={startDate}
 						onChange={(date: Date) => setStartDate(date)}
+						minDate={new Date()}
 						// showTimeSelect
 						dateFormat="Pp"
 						placeholderText="Select date start"
@@ -38,6 +38,7 @@ const Billing = (props: Props) => {
 						selected={endDate}
 						onChange={(date: Date) => setEndDate(date)}
 						// showTimeSelect
+						minDate={new Date()}
 						dateFormat="Pp"
 						// dateFormat="MMMM d, yyyy h:mm aa"
 						placeholderText="Select date end"
@@ -58,6 +59,4 @@ const UserComponent = () => {
 	</UserContext.Provider>;
 };
 
-const User1 =()=>{
-
-}
+const User1 = () => {};

@@ -37,7 +37,7 @@ import kidsslide2 from "../public/kidsslide2.jpg";
 
 export const navLinks = [
 	{
-		id: "home",
+		id: "/",
 		title: "Home",
 	},
 	{

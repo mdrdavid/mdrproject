@@ -1,15 +1,16 @@
 import React from "react";
 import { Navbar } from "../components";
+import {ContactUs} from "../components";
 
 type Props = {};
 
-function ContactUs({}: Props) {
+function ContactUsPage({}: Props) {
 	return (
 		<div>
 			<Navbar />
-			Contact us
+			<ContactUs/>
 		</div>
 	);
 }
 
-export default ContactUs;
+export default ContactUsPage;

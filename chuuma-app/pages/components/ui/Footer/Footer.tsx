@@ -47,9 +47,15 @@ const Footer = () => (
 		</div>
 
 		<div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-			<p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-black">
-				Copyright Ⓒ 2022 chuuma fabrictors. All Rights Reserved.
-			</p>
+			<div>
+				<p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-black">
+					Copyright Ⓒ 2022 chuuma fabrictors. All Rights Reserved.
+				</p>
+			</div>
+			<div>
+				Contact Information: Wabigalo Mityana along
+					Mityana Kampala Highway 0705621018 / 0781602071
+			</div>
 			<SocialContacts />
 		</div>
 	</section>

@@ -1,5 +1,6 @@
 import React from "react";
-import { Navbar } from "../components";
+import { Footer, Navbar } from "../components";
+import ServicesContainer from "../components/ui/Services/Services"
 
 type Props = {};
 
@@ -7,7 +8,8 @@ function Services({}: Props) {
 	return (
 		<div>
 			<Navbar />
-			Services
+			<ServicesContainer/>
+			<Footer/>
 		</div>
 	);
 }
