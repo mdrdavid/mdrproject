@@ -1,76 +1,150 @@
+import React, { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "../../../../styles/styles";
-import discount from "../../../../public/Discount.jpg";
 import robot from "../../../../public/robot.jpg";
-import { ContactUs } from "../../../components";
+import windows from "../../../../public/windows.jpeg";
+import hero2 from "../../../../public/hero2.jpeg";
+import bg1 from "../../../../public/bg1.jpg";
 import SocialContacts from "../SocialContacts/SocialContacts";
 
 interface HeroProps {}
 
 const Hero = () => {
+	// const [currentIndex, setCurrentIndex] = useState(0);
+  //   const images = [
+  //       { src: windows, alt: 'Image 1', width: 1000, height: 1000 },
+  //       { src: hero2, alt: 'Image 2', width: 1000, height: 1000  },
+  //       { src: bg1, alt: 'Image 3', width: 1000, height: 1000  },
+  //       { src: robot, alt: 'Image 4', width: 1000, height: 1000  },
+  //       { src: windows, alt: 'Image 5',width: 1000, height: 1000  }
+  //   ];
+
+  //   useEffect(() => {
+  //       const intervalId = setInterval(() => {
+  //           setCurrentIndex((currentIndex + 1) % images.length);
+  //       }, 3000);
+  //       return () => clearInterval(intervalId);
+  //   }, [currentIndex, images.length]);
 	return (
 		<>
-			<section
+
+{/* <div className="relative bg-gray-200 p-4 w-full">
+            <div className="absolute top-0 left-0 right-0">
+                <p className="text-center text-white bg-black p-2">This is the component sitting on top of the Carousel</p>
+            </div>
+            <Image
+                src={images[currentIndex].src}
+                alt={images[currentIndex].alt}
+                width={images[currentIndex].width}
+                height={images[currentIndex].height}
+                className="mx-auto"
+            />
+        </div> */}
+
+
+
+			<div
 				id="home"
-				className={`flex md:flex-row flex-col ${styles.paddingY}`}
+				className={`block  ${styles.paddingY}`}
+				style={{
+					backgroundImage: `url(${bg1.src})`,
+					width: "100%",
+					height: "100%",
+					borderRadius:"20px",
+					backgroundRepeat: "repeat-x"
+				}}
 			>
 				<div
-					className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
+					className={`hidden sm:flex ${styles.flexStart} flex-col bg-cyan-800 rounded-2xl m-auto text-center py-5 px-6 xl:px-0 sm:px-16 sm:py-16 sm:w-[600px] sm:h-[500px]`}
 				>
-					<div className=" hidden sm:flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-						<Image
-							src={discount}
-							alt="discount"
-							className="w-[32px] h-[32px]"
-						/>
-						<p className={`${styles.paragraph} ml-2`}>
-							<span className="text-white">20%</span> Discount For{" "}
-							<span className="text-white">1 Month</span> Account
-						</p>
-					</div>
-
 					<div className="flex flex-row justify-between items-center w-full">
-						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] ss:leading-[100.8px] leading-[75px]">
-							<span className="text-gradient">Chuuma Fubricators</span>{" "}
+						<h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[27px] ss:leading-[100.8px] leading-[10px]">
+							<span className="text-gradient text-[#9A2582] sm:hidden">
+								Chuuma Fabricators
+							</span>{" "}
 						</h1>
-						<div className="ss:flex hidden md:mr-4 mr-0">
-							<ContactUs />
-						</div>
 					</div>
 					<div>
-						<h1 className="font-poppins font-semibold ss:text-[68px] text-[30px] text-red ss:leading-[100.8px] leading-[75px] w-full">
+						<div>
+						<h1 className=" md:hidden font-poppins font-semibold ss:text-[68px] text-[30px] ss:leading-[100.8px] leading-[30px] w-full">
 							Wabigalo Mityana
 						</h1>
-						<p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-							Our team of skilled and qualified engineers uses modern
-							technologies to provide you with quality, reliable, durable but
-							pocket friendly metal products.
+						<p
+							className={`${styles.paragraph} max-w-[470px] mt-1 text-red-500 text-[30px]`}
+						>
+							We make;
 						</p>
-						<h1 className="text-[18px] pt-4 pb-3">Contact us</h1>
-						<SocialContacts />
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900 font-semibold text-[20px] text-start ml-5`}
+						>
+							Aluminum doors and windows{" "}
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900 text-[20px] font-semibold text-start ml-5`}
+						>
+							Steal doors and windows
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900 text-[20px] font-semibold text-start ml-5`}
+						>
+							Roller Shutters
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
+						>
+							Balconies
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
+						>
+							Beds
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
+						>
+							School Desks
+						</p>
+						<p
+							className={`${styles.paragraph} mt-1 text-gray-900  text-[20px] font-semibold text-start ml-5`}
+						>
+							Kids play equipments
+						</p>
+						</div>
+						<div className="">
+							<h1 className="text-[26px] pt-4 pb-3 px-4 text-red-500">
+								Contact Us:
+							</h1>
+							<h2 className="text-[26px] text-gray-90font-semibold 0 text-start  pb-3 ml-5">
+								0705621018 / 0781602071
+							</h2>
+							{/* <SocialContacts /> */}
+						</div>
 					</div>
 				</div>
-
 				<div
-					className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+					className={`flex-1 sm:hidden flex ${styles.flexCenter} md:my-0 my-10 relative`}
 				>
 					<Image
 						src={robot}
 						alt="billing"
-						className="w-[100%] h-[100%] relative z-[5]"
+						className="w-[90%] h-[90%] relative z-[5] rounded-2xl"
 					/>
-
-					{/* gradient start */}
-					<div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-					<div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-					<div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
-					{/* gradient end */}
 				</div>
-				{/* 
-				<div className={`ss:hidden ${styles.flexCenter}`}>
-					<ContactUs />
-				</div> */}
-			</section>
+			</div>
+			<div className="">
+				<p
+					className={`${styles.paragraph} max-w-[470px] mt-5 sm:text-white text-[25px] sm:hidden`}
+				>
+					We make Aluminum doors and windows ,steal doors and windows, roller
+					shutters,balconies, beds, school desks.
+				</p>
+				<p className=" hidden sm:block text-[25px] pt-4 pb-3 text-center">
+					Our experienced and highly skilled Technical team are always there to
+					provide you with quality products that fit your home and Commercial building metal requirements.
+					<p className="font-semibold py-5">Contact us on 0705621018 / 0781602071</p>
+				</p>
+				<SocialContacts />
+			</div>
 		</>
 	);
 };

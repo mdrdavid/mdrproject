@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "../../../../styles/styles";
 import mark from "../../../../public/mark.svg";
+import logos from "../../../../public/logos.jpg";
 import { footerLinks } from "../../../../constants";
 import SocialContacts from "../SocialContacts/SocialContacts";
 
@@ -8,18 +9,18 @@ const Footer = () => (
 	<section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
 		<div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
 			<div className="flex-[1] flex flex-col justify-start mr-10">
-				<Image
-					src={mark}
+				{/* <Image
+					src={logos}
 					alt="logo"
 					className="w-[266px] h-[72.14px] object-contain"
-				/>
-				<p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
-					For new and modern fittings to make the your building strong ,
-					reliable and secure.
-				</p>
+				/> */}
+				{/* <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
+					For new and modern fittings to make your building strong , durable and
+					secure.
+				</p> */}
 			</div>
 
-			<div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
+			{/* <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
 				{footerLinks.map((footerlink) => (
 					<div
 						key={footerlink.title}
@@ -42,13 +43,19 @@ const Footer = () => (
 						</ul>
 					</div>
 				))}
-			</div>
+			</div> */}
 		</div>
 
 		<div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
-			<p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-				Copyright Ⓒ 2022 chuuma. All Rights Reserved.
-			</p>
+			<div>
+				<p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-black">
+					Copyright Ⓒ 2022 chuuma fabrictors. All Rights Reserved.
+				</p>
+			</div>
+			<div>
+				Contact Information: Wabigalo Mityana along
+					Mityana Kampala Highway 0705621018 / 0781602071
+			</div>
 			<SocialContacts />
 		</div>
 	</section>
