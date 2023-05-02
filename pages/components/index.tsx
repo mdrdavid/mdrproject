@@ -1,5 +1,4 @@
 export { default as Button } from "./ui/Button/Button";
-export { default as Billing } from "./ui/Billing/Billing";
 export { default as Business } from "./ui/Business/Business";
 export { default as CardDeals } from "./ui/CardDeals/CardDeals";
 export { default as Clients } from "./ui/Clients/Clients";
