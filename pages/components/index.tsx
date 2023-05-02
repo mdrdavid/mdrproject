@@ -1,7 +1,4 @@
-export { default as Button } from "./ui/Button/Button";
-export { default as Business } from "./ui/Business/Business";
-export { default as CardDeals } from "./ui/CardDeals/CardDeals";
-export { default as Clients } from "./ui/Clients/Clients";
+
 export { default as Hero } from "./ui/Hero/Hero";
 export { default as Navbar } from "./ui/Navbar/Navbar";
 export { default as Starts } from "./ui/Starts/Starts";
