@@ -10,39 +10,9 @@ import SocialContacts from "../SocialContacts/SocialContacts";
 interface HeroProps {}
 
 const Hero = () => {
-	// const [currentIndex, setCurrentIndex] = useState(0);
-  //   const images = [
-  //       { src: windows, alt: 'Image 1', width: 1000, height: 1000 },
-  //       { src: hero2, alt: 'Image 2', width: 1000, height: 1000  },
-  //       { src: bg1, alt: 'Image 3', width: 1000, height: 1000  },
-  //       { src: robot, alt: 'Image 4', width: 1000, height: 1000  },
-  //       { src: windows, alt: 'Image 5',width: 1000, height: 1000  }
-  //   ];
-
-  //   useEffect(() => {
-  //       const intervalId = setInterval(() => {
-  //           setCurrentIndex((currentIndex + 1) % images.length);
-  //       }, 3000);
-  //       return () => clearInterval(intervalId);
-  //   }, [currentIndex, images.length]);
+	
 	return (
 		<>
-
-{/* <div className="relative bg-gray-200 p-4 w-full">
-            <div className="absolute top-0 left-0 right-0">
-                <p className="text-center text-white bg-black p-2">This is the component sitting on top of the Carousel</p>
-            </div>
-            <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-                width={images[currentIndex].width}
-                height={images[currentIndex].height}
-                className="mx-auto"
-            />
-        </div> */}
-
-
-
 			<div
 				id="home"
 				className={`block  ${styles.paddingY}`}
